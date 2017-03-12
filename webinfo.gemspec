@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["kruglay"]
   spec.email         = ["kruglay@mail.ru"]
 
-  spec.summary       = %q{A gem gets info from web page}
+  spec.summary       = %q{A gem gets attributes value from web page}
   spec.homepage      = "https://github.com/kruglay/webinfo"
   spec.license       = "MIT"
 
@@ -21,9 +21,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.14"
-  spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "httparty", "~> 0.14.0"
-  spec.add_development_dependency "nokogiri", "~> 1.7", ">= 1.7.0.1"
+  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_runtime_dependency "httparty", "~> 0.14.0"
+  spec.add_runtime_dependency "nokogiri", "~> 1.7", ">= 1.7.0.1"
 
 end

@@ -1,5 +1,7 @@
+[![Gem Version](https://badge.fury.io/rb/webinfo.svg)](https://badge.fury.io/rb/webinfo)
 # Webinfo
 
+Get attributes value from web page and return it as array
 
 
 ## Installation

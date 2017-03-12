@@ -8,7 +8,7 @@ class Webinfo
   def self.get_info(addr, options = {})
     response = HTTParty.get(addr)
     doc = Nokogiri::HTML(response)
-    nodes_images = doc.xpath("//#{options[:node]}")
-    nodes_images.map {|i| i[options[:attr]]}.compact.uniq
+    nodes = doc.xpath("//#{options[:node]}")
+    nodes.map {|i| i[options[:attr]]}.compact.uniq
   end
 end
